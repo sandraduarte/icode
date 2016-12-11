@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Psychic Game!</title>
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+</head>
+
+<h1>Psychic Game!</h1>
+<body>
+<input type="button" value="Want to Play?" onclick="playGame()"> 
+<h2>
+<h3>Wins</h3>
+<h3>Losses</h3>
+<h3>GuessesLeft</h3>
+<h3>GuessesSoFar</h3>
+
+
+<script type = "text/javascript">
+
+var randomNumber; 
+function playGame ( ) {
+var Wins = document.getElementById("Wins");
+var Losses = document.getElementById("Losses");
+var GuessesLeft = document.getElementById("GuessesLeft");
+var GuessesSoFar = document.getElementById("GuessesSoFar");
+var randomNumber = Math.floor(Math.random() * 1000) + 1;
+var answer;
+var fnd = false;
+var cnt = 8;
+while ((cnt >= 0) && (fnd == false)) {
+answer = Number(prompt("Guess what number I'm thinking of (It's between 1 & 100)", "")) || 0; 
+if (answer !== ranNum) { alert("Wrong, you have " + cnt + " more chances"); } 
+if (answer == ranNum) { alert("Good Guess, you must be psychic!"); fnd = true; }
+cnt--;
+}
+
+if (!fnd) { alert('Sorry you lost..The number was'+ranNum); }
+return fnd;
+}
+
+function generateRandomNumber() {
+ranNum = Math.floor(Math.random()*10)+1;
+}
+
+window.onload = function() { generateRandomNumber(); }
+</script>
+
+</body> 
+</html>
