@@ -1,0 +1,24 @@
+{
+  "name": "icode",
+  "version": "1.0.0",
+  "description": "application resource for developers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandraduarte/icode.git"
+  },
+  "keywords": [
+    "react",
+    "mongodb"
+  ],
+  "author": "dreamteam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandraduarte/icode/issues"
+  },
+  "homepage": "https://github.com/sandraduarte/icode#readme"
+}
