@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/sandraduarte/icode/issues"
   },
-  "homepage": "https://github.com/sandraduarte/icode#readme"
+  "homepage": "https://github.com/sandraduarte/icode#readme",
+  "dependencies": {
+    "passport": "^0.3.2"
+  }
 }
